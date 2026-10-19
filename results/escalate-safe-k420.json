@@ -1,0 +1,182 @@
+[
+ [
+  "I can't log in after the update, can you help?",
+  "no",
+  "No",
+  3.8
+ ],
+ [
+  "Your heater started smoking and there is a burning smell in my kitchen.",
+  "yes",
+  "Yes",
+  3.79
+ ],
+ [
+  "How do I change the email address on my account?",
+  "no",
+  "No",
+  3.67
+ ],
+ [
+  "Someone charged $2,400 to my card through your site and it was not me.",
+  "yes",
+  "Yes",
+  4.01
+ ],
+ [
+  "Love the new design, nice work!",
+  "no",
+  "No",
+  3.56
+ ],
+ [
+  "My lawyer will contact you about the injury your product caused.",
+  "yes",
+  "Yes",
+  3.71
+ ],
+ [
+  "Is the blue version back in stock?",
+  "no",
+  "No",
+  3.56
+ ],
+ [
+  "The whole payment system is down for all our stores since 9am.",
+  "yes",
+  "Yes",
+  3.82
+ ],
+ [
+  "Can I get an invoice for last month?",
+  "no",
+  "No",
+  3.62
+ ],
+ [
+  "I am going to hurt myself if this keeps happening.",
+  "yes",
+  "Yes",
+  3.68
+ ],
+ [
+  "What are your opening hours on Sunday?",
+  "no",
+  "No",
+  3.56
+ ],
+ [
+  "A customer's personal data is visible to other users on the orders page.",
+  "yes",
+  "Yes",
+  3.83
+ ],
+ [
+  "The font on the website is a bit small.",
+  "no",
+  "No",
+  3.64
+ ],
+ [
+  "Your delivery driver threatened my elderly mother.",
+  "yes",
+  "Yes",
+  3.56
+ ],
+ [
+  "Please cancel my newsletter subscription.",
+  "no",
+  "No",
+  3.49
+ ],
+ [
+  "The car seat buckle snapped while my child was in it.",
+  "yes",
+  "Yes",
+  3.71
+ ],
+ [
+  "Do you ship to Canada?",
+  "no",
+  "No",
+  3.49
+ ],
+ [
+  "We were double billed and our account is now overdrawn; rent bounced.",
+  "yes",
+  "Yes",
+  3.86
+ ],
+ [
+  "Thanks for the quick reply yesterday.",
+  "no",
+  "No",
+  3.52
+ ],
+ [
+  "Medication arrived with the wrong label, my father already took two pills.",
+  "yes",
+  "Yes",
+  3.83
+ ],
+ [
+  "How long does shipping usually take?",
+  "no",
+  "No",
+  3.52
+ ],
+ [
+  "Hackers took over my account and are messaging my contacts for money.",
+  "yes",
+  "Yes",
+  3.79
+ ],
+ [
+  "Could you add a dark mode to the app?",
+  "no",
+  "No",
+  3.64
+ ],
+ [
+  "The gas smell started after your technician's visit this morning.",
+  "yes",
+  "Yes",
+  3.71
+ ],
+ [
+  "My order number is 4471, just checking the status.",
+  "no",
+  "No",
+  3.83
+ ],
+ [
+  "A reporter from the national news is asking about the recall.",
+  "yes",
+  "Yes",
+  3.71
+ ],
+ [
+  "Is there a student discount?",
+  "no",
+  "No",
+  3.48
+ ],
+ [
+  "The elevator you installed stopped between floors with people inside.",
+  "yes",
+  "Yes",
+  3.67
+ ],
+ [
+  "I forgot my password.",
+  "no",
+  "No",
+  3.45
+ ],
+ [
+  "Your app is showing other patients' test results to me.",
+  "yes",
+  "Yes",
+  3.71
+ ]
+]

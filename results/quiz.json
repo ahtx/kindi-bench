@@ -1,0 +1,8 @@
+{
+ "greedy": 0,
+ "vote_nothink": 3,
+ "vote_think": 5,
+ "think_single": 5,
+ "any": 7,
+ "any_nothink": 7
+}

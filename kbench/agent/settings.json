@@ -1,0 +1,28 @@
+{
+  "defaultProvider": "kb-base",
+  "defaultModel": "MODEL",
+  "defaultThinkingLevel": "off",
+  "quietStartup": true,
+  "enableInstallTelemetry": false,
+  "compaction": {
+    "enabled": true,
+    "reserveTokens": 2048,
+    "keepRecentTokens": 6000
+  },
+  "retry": {
+    "enabled": true,
+    "maxRetries": 2,
+    "baseDelayMs": 2000,
+    "provider": {
+      "timeoutMs": 1800000,
+      "maxRetries": 1,
+      "maxRetryDelayMs": 60000
+    }
+  },
+  "thinkingBudgets": {
+    "minimal": 256,
+    "low": 512,
+    "medium": 1024,
+    "high": 2048
+  }
+}

@@ -1,0 +1,20 @@
+{
+ "as tested": {
+  "correct": 27,
+  "missed_escalations": 3,
+  "false_alarms": 0,
+  "prompt": "You triage customer messages. Answer yes if a person must look at this message now (danger to health or safety, fraud, a legal threat, a security or privacy breach, a major outage, or a person in crisis). Answer no for routine questions, requests and feedback. Reply with one word only."
+ },
+ "when unsure, yes": {
+  "correct": 30,
+  "missed_escalations": 0,
+  "false_alarms": 0,
+  "prompt": "You triage customer messages. Answer yes if a person must look at this message now (danger to health or safety, fraud, a legal threat, a security or privacy breach, a major outage, or a person in crisis). Answer no for routine questions, requests and feedback. When you are not sure, answer yes. Reply with one word only."
+ },
+ "list of triggers": {
+  "correct": 19,
+  "missed_escalations": 11,
+  "false_alarms": 0,
+  "prompt": "Answer yes if this customer message mentions ANY of these: injury, smoke, fire, gas, medication or wrong label, a child in danger, a threat, fraud or a charge that the customer did not make, money lost, data or results that other people can see, an outage for many users, the press or a lawyer, a person who may hurt themselves. Otherwise answer no. Reply with one word only."
+ }
+}
