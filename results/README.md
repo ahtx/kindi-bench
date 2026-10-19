@@ -18,6 +18,9 @@ The agent was pi 1.3.0 with the configuration that `kbench run` writes. The full
 | `escalate-variants.json` | 3080 | The escalate job with three different prompts: correct answers, missed escalations and false alarms out of 30 |
 | `escalate-safe-k420.json` | K420 | The escalate job with the prompt that adds "When you are not sure, answer yes." Each row has the message, the correct answer, the reply and the time in seconds. |
 | `quiz.json` | K420 | The 12 questions in `kbench/tasks/quiz.py`: the number of correct answers for each method |
+| `breakdown-k420.json` | K420 | `kbench breakdown` output with the first prompts: for each job, 3 agent runs, 3 one-prompt runs and the broken-down run |
+| `breakdown-broken-k420.json` | K420 | The broken-down runs again with the fixed reply parser (first prompts) |
+| `breakdown-fix-k420.json` | K420 | The spam and order jobs with the tested prompts, on the original items and on held-out items |
 | `wf-k420.json` | K420 | The output of a small workflow program: the program counts and sorts, and the model writes only the words. The file has the time of each model call, the facts, the summary and the message rows. |
 
 ## The runs in results.json

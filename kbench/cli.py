@@ -5,7 +5,7 @@ import os
 import sys
 
 from . import __version__
-from .tasks import TASK, TASKS, select
+from .tasks import TASK, select
 
 DEFAULT_URL = "http://127.0.0.1:8093/v1"
 
@@ -72,7 +72,7 @@ def cmd_textjobs(a):
 
 def cmd_breakdown(a):
     from . import breakdown
-    breakdown.main(a.url, a.out, a.model, a.agent_runs, a.api_runs, a.only, a.pi, a.work, a.timeout)
+    breakdown.main(a.url, a.out, a.model, a.agent_runs, a.api_runs, a.only, a.pi, a.work, a.timeout, a.prompts)
     return 0
 
 
@@ -154,6 +154,8 @@ def main(argv=None):
     p.add_argument("--pi", help="path of the pi binary (default: pi in PATH)")
     p.add_argument("--work", default="~/kbench-work", help="parent folder of the agent work folders")
     p.add_argument("--timeout", type=int, default=900, help="seconds for each agent session")
+    p.add_argument("--prompts", choices=["tested", "first"], default="tested",
+                   help="per-item prompts: tested (default) or the first ones, which failed on spam and orders")
     p.set_defaults(fn=cmd_breakdown)
 
     a = ap.parse_args(argv)

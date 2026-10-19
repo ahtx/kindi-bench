@@ -1,0 +1,30 @@
+{
+ "spam": {
+  "original": {
+   "passed": false,
+   "items_right": 19,
+   "items": 20
+  },
+  "held_out": {
+   "passed": false,
+   "items_right": 9,
+   "items": 10
+  }
+ },
+ "orders": {
+  "original": {
+   "passed": true,
+   "got": 378.89,
+   "truth": 378.89,
+   "items_right": 10,
+   "items": 10
+  },
+  "held_out": {
+   "passed": true,
+   "got": 337.49,
+   "truth": 337.49,
+   "items_right": 6,
+   "items": 6
+  }
+ }
+}

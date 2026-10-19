@@ -218,6 +218,58 @@ def one_word(text, words):
     return min(hits)[1] if hits else None
 
 
+# The per-item prompts for the two jobs whose first prompt failed. "first" = the prompts of the first K420 run:
+# "Reply with one word: spam or ham." made the model call most normal e-mails spam, and "for example 12.34" made it
+# copy "12." into its answers. "tested" = the fixed prompts (the spam prompt of the text jobs; no example number).
+PROMPTS = {
+    "first": {"spam": "Is this e-mail spam (unwanted advertising, a scam or phishing) or ham (a normal message)? "
+                      "Reply with one word: spam or ham.\n\n",
+              "orders": "This e-mail is about one order. What is the total amount that was paid? Reply with the "
+                        "number only, for example 12.34.\n\n"},
+    "tested": {"spam": "Is this e-mail spam (unwanted advertising, a scam or phishing) or ham (a normal message)? "
+                       "Answer spam or ham.\n\n",
+               "orders": "This e-mail is about one order. What is the total amount that was paid? Reply with the "
+                         "number only.\n\n"},
+}
+USE = "tested"
+
+# Held-out items, written after the prompt fix, so that the fix is not scored only on the items that showed the problem.
+HELD_SPAM = [(t, "spam") for t in [
+    "Claim your free iPhone now, only 3 left! Click the link.",
+    "Your bank account is locked. Log in at secure-bank-verify.example to unlock it.",
+    "Earn 300 dollars a day from your sofa. No experience needed.",
+    "FINAL NOTICE: your car warranty expires today. Call now."]] + [(t, "ham") for t in [
+    "The plumber will come on Thursday between 9 and 11.",
+    "Here is the agenda for tomorrow's call.",
+    "Your flight to Denver is confirmed. Seat 14C.",
+    "Can we move our 1:1 to Friday morning?",
+    "The school trip form is due on Monday.",
+    "Thanks for lending me the drill, I will bring it back tonight."]]
+HELD_ORDERS = [
+    ("Order 3401: three shirts, total paid $58.20, size M.", 58.20),
+    ("I paid $9.99 for order 7720 (1 phone case).", 9.99),
+    ("For order 1210 the card was charged $134.75 on 12 June.", 134.75),
+    ("Order 5555, 2 lamps at $20.00 each, total $40.00.", 40.00),
+    ("Receipt for order 8080: total amount 23.10 dollars, 4 items.", 23.10),
+    ("Order 6600 arrived in box 2 of 2. Total charged: $71.45.", 71.45)]
+
+
+def held_out(url):
+    """The broken-down spam and order jobs on the held-out items, with the current prompts."""
+    right = sum((one_word(chat(url, PROMPTS[USE]["spam"] + t, 5, 0)[0], ["spam", "ham"]) or "ham") == want
+                for t, want in HELD_SPAM)
+    tot, ok = 0.0, 0
+    for t, want in HELD_ORDERS:
+        n = nums(chat(url, PROMPTS[USE]["orders"] + t, 10, 0)[0])
+        v = n[0] if n else 0.0
+        tot += v
+        ok += abs(v - want) < 0.005
+    truth = round(sum(v for _, v in HELD_ORDERS), 2)
+    return {"spam": {"passed": right == len(HELD_SPAM), "items_right": right, "items": len(HELD_SPAM)},
+            "orders": {"passed": abs(tot - truth) < 0.005, "got": round(tot, 2), "truth": truth, "items_right": ok,
+                       "items": len(HELD_ORDERS)}}
+
+
 def broken(job, url):
     """The program walks the items; Kindi answers one short question per item; the program counts."""
     calls, items = [], []
@@ -232,8 +284,7 @@ def broken(job, url):
     elif job == "spam":
         sp = []
         for name, (t, want) in zip(MAIL_NAMES, EMAILS):
-            out, s = chat(url, "Is this e-mail spam (unwanted advertising, a scam or phishing) or ham (a normal "
-                               "message)? Reply with one word: spam or ham.\n\n" + t, 5, 0)
+            out, s = chat(url, PROMPTS[USE]["spam"] + t, 5, 0)
             w = one_word(out, ["spam", "ham"]) or "ham"
             if w == "spam":
                 sp.append(name)
@@ -260,8 +311,7 @@ def broken(job, url):
     elif job == "orders":
         tot = 0.0
         for t, want in ORDERS:
-            out, s = chat(url, "This e-mail is about one order. What is the total amount that was paid? Reply with "
-                               "the number only, for example 12.34.\n\n" + t, 10, 0)
+            out, s = chat(url, PROMPTS[USE]["orders"] + t, 10, 0)
             n = nums(out)
             v = n[0] if n else 0.0
             tot += v; calls.append(s); items.append(abs(v - want) < 0.005)
@@ -360,13 +410,15 @@ def agent(job, run, url, pi, agent_dir, work, timeout):
     return res
 
 
-def main(url, out, model, agent_runs=3, api_runs=3, only="", pi=None, work="~/kbench-work", timeout=900):
-    global _MODEL
+def main(url, out, model, agent_runs=3, api_runs=3, only="", pi=None, work="~/kbench-work", timeout=900,
+         prompts="tested"):
+    global _MODEL, USE
     _MODEL = model
+    USE = prompts
     jobs = [j for j in TASK if not only or j in only.split(",")]
     if not jobs:
         raise SystemExit("unknown job (known: %s)" % ", ".join(TASK))
-    R = {"model": model, "url": piconfig.public_url(server.base(url)), "truth": TRUTH, "jobs": {}}
+    R = {"model": model, "url": piconfig.public_url(server.base(url)), "prompts": prompts, "truth": TRUTH, "jobs": {}}
     tmp = None
     if agent_runs:
         if not model:
@@ -387,6 +439,11 @@ def main(url, out, model, agent_runs=3, api_runs=3, only="", pi=None, work="~/kb
                 r["agent"].append(agent(job, k + 1, url, pi, agent_dir, tmp, timeout))
                 print(job, "agent", k + 1, r["agent"][-1]["passed"], r["agent"][-1]["got"], r["agent"][-1]["secs"],
                       flush=True)
+            with open(out, "w") as f:
+                json.dump(R, f, indent=1, default=str)
+        if {"spam", "orders"} & set(jobs):
+            R["held_out"] = held_out(url)
+            print("held-out", {k: v["passed"] for k, v in R["held_out"].items()}, flush=True)
             with open(out, "w") as f:
                 json.dump(R, f, indent=1, default=str)
     finally:

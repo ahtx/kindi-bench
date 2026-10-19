@@ -1,0 +1,132 @@
+{
+ "truth": {
+  "tally": {
+   "positive": 8,
+   "negative": 7,
+   "neutral": 5
+  },
+  "spam": [
+   "mail07.txt",
+   "mail08.txt",
+   "mail09.txt",
+   "mail11.txt",
+   "mail12.txt",
+   "mail13.txt",
+   "mail14.txt",
+   "mail18.txt"
+  ],
+  "urgent": [
+   "M02",
+   "M03",
+   "M07",
+   "M11",
+   "M14",
+   "M17",
+   "M19"
+  ],
+  "topic": [
+   "sports",
+   6
+  ],
+  "orders": 378.89
+ },
+ "jobs": {
+  "tally": {
+   "broken": {
+    "passed": true,
+    "got": {
+     "positive": 8,
+     "negative": 7,
+     "neutral": 5
+    },
+    "answer": "positive 8\nnegative 7\nneutral 5\n",
+    "calls": 20,
+    "secs": 41.3,
+    "items_right": 20,
+    "items": 20
+   },
+   "oneshot": [],
+   "agent": []
+  },
+  "spam": {
+   "broken": {
+    "passed": false,
+    "got": [
+     "mail02.txt",
+     "mail04.txt",
+     "mail05.txt",
+     "mail06.txt",
+     "mail07.txt",
+     "mail08.txt",
+     "mail09.txt",
+     "mail10.txt",
+     "mail11.txt",
+     "mail12.txt",
+     "mail13.txt",
+     "mail14.txt",
+     "mail17.txt",
+     "mail18.txt",
+     "mail19.txt",
+     "mail20.txt"
+    ],
+    "answer": "mail02.txt\nmail04.txt\nmail05.txt\nmail06.txt\nmail07.txt\nmail08.txt\nmail09.txt\nmail10.txt\nmail11.txt\nmail12.txt\nmail13.txt\nmail14.txt\nmail17.txt\nmail18.txt\nmail19.txt\nmail20.txt",
+    "calls": 20,
+    "secs": 46.0,
+    "items_right": 12,
+    "items": 20
+   },
+   "oneshot": [],
+   "agent": []
+  },
+  "urgent": {
+   "broken": {
+    "passed": true,
+    "got": [
+     "m02",
+     "m03",
+     "m07",
+     "m11",
+     "m14",
+     "m17",
+     "m19"
+    ],
+    "answer": "M02\nM03\nM07\nM11\nM14\nM17\nM19",
+    "calls": 20,
+    "secs": 72.6,
+    "items_right": 20,
+    "items": 20
+   },
+   "oneshot": [],
+   "agent": []
+  },
+  "topic": {
+   "broken": {
+    "passed": true,
+    "got": [
+     "sports",
+     6
+    ],
+    "answer": "sports 6",
+    "calls": 15,
+    "secs": 26.8,
+    "items_right": 13,
+    "items": 15
+   },
+   "oneshot": [],
+   "agent": []
+  },
+  "orders": {
+   "broken": {
+    "passed": false,
+    "got": 296.89,
+    "answer": "296.89",
+    "calls": 10,
+    "secs": 28.6,
+    "items_right": 8,
+    "items": 10
+   },
+   "oneshot": [],
+   "agent": []
+  }
+ }
+}

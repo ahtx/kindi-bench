@@ -147,6 +147,7 @@ kbench collect RUNID [RUNID ...] [--runs DIR] > results.json
 kbench validate [--tasks ...] [--strict]
 kbench textjobs OUT.json [--url URL] [--model ID] [--only job,job] [--limit K] [--parallel N]
 kbench breakdown OUT.json [--url URL] [--model ID] [--only job,job] [--agent-runs N] [--api-runs N] [--pi PATH]
+                 [--prompts tested|first]
 kbench list [--tasks ...] [--markdown]
 kbench show TASK [--all]
 ```
