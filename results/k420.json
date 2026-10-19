@@ -1,0 +1,100 @@
+{
+ "rows": [
+  {
+   "task": "bigmul",
+   "outcome": "wrong",
+   "secs": 1800.0,
+   "tier": "hard",
+   "passed": false
+  },
+  {
+   "task": "calc",
+   "outcome": "crash",
+   "secs": 1800.0,
+   "tier": "hard",
+   "passed": false
+  },
+  {
+   "task": "csvline",
+   "outcome": "wrong",
+   "secs": 853.9,
+   "tier": "hard",
+   "passed": false
+  },
+  {
+   "task": "lru",
+   "outcome": "crash",
+   "secs": 1800.0,
+   "tier": "hard",
+   "passed": false
+  },
+  {
+   "task": "minwindow",
+   "outcome": "crash",
+   "secs": 1800.0,
+   "tier": "hard",
+   "passed": false
+  },
+  {
+   "task": "roman",
+   "outcome": "wrong",
+   "secs": 184.1,
+   "tier": "hard",
+   "passed": false
+  },
+  {
+   "task": "topo",
+   "outcome": "timeout",
+   "secs": 1102.3,
+   "tier": "hard",
+   "passed": false
+  },
+  {
+   "task": "wordbreak",
+   "outcome": "timeout",
+   "secs": 1800.0,
+   "tier": "hard",
+   "passed": false
+  },
+  {
+   "task": "clamp",
+   "outcome": "pass",
+   "secs": 138.6,
+   "tier": "easy",
+   "passed": true
+  },
+  {
+   "task": "fixavg",
+   "outcome": "pass",
+   "secs": 157.8,
+   "tier": "easy",
+   "passed": true
+  },
+  {
+   "task": "fizz",
+   "outcome": "pass",
+   "secs": 52.2,
+   "tier": "easy",
+   "passed": true
+  },
+  {
+   "task": "sumargs",
+   "outcome": "wrong",
+   "secs": 49.5,
+   "tier": "easy",
+   "passed": false
+  },
+  {
+   "task": "wordfreq",
+   "outcome": "wrong",
+   "secs": 279.0,
+   "tier": "easy",
+   "passed": false
+  }
+ ],
+ "easy_n": 5,
+ "easy_pass": 3,
+ "hard_n": 8,
+ "hard_pass": 0,
+ "runs": 13
+}

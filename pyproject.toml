@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kbench"
+version = "0.1.0"
+description = "Agent benchmark for small models: the pi coding agent against an OpenAI-compatible server"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [{name = "Amir Husain"}]
+dependencies = []
+
+[project.urls]
+Homepage = "https://amirhusain.com/kindi"
+Kindi = "https://github.com/ahtx/kindi"
+
+[project.scripts]
+kbench = "kbench.cli:main"
+
+[tool.setuptools]
+packages = ["kbench", "kbench.tasks"]
+
+[tool.setuptools.package-data]
+kbench = ["agent/SYSTEM.md", "agent/settings.json"]

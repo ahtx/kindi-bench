@@ -1,0 +1,65 @@
+{
+ "calls": [
+  3.7,
+  1.8,
+  3.8,
+  1.9,
+  3.6,
+  1.7,
+  3.7,
+  1.8,
+  3.7,
+  1.8,
+  3.5,
+  1.6,
+  3.7,
+  1.8,
+  3.6,
+  1.7,
+  9.9
+ ],
+ "summary": "The ERROR lines are at 117 total, with the highest hour being 09 with 42 lines. The busiest clients are 10.0.0.2 with 153 connections. There are 3 urgent customer messages out of 8 total.",
+ "facts": "Log levels: {'ERROR': 117, 'INFO': 84, 'DEBUG': 101, 'WARN': 98}. ERROR lines by hour: {'08': 35, '09': 42, '10': 30, '11': 10}. Busiest clients: 10.0.0.2 (153), 10.0.0.5 (120), 10.0.0.7 (78). Urgent customer messages: 3 of 8.",
+ "rows": [
+  [
+   false,
+   "positive",
+   "Thanks, the new invoice layout is much clearer."
+  ],
+  [
+   true,
+   "negative",
+   "The checkout page has been down for all our customers since 9 am."
+  ],
+  [
+   false,
+   "neutral",
+   "How do I export my data to CSV?"
+  ],
+  [
+   true,
+   "negative",
+   "Your app shows another customer's order history on my account."
+  ],
+  [
+   false,
+   "negative",
+   "The delivery was two days late and nobody told me."
+  ],
+  [
+   false,
+   "positive",
+   "Can you add a dark mode?"
+  ],
+  [
+   true,
+   "negative",
+   "There is smoke coming out of the charger you sold me."
+  ],
+  [
+   false,
+   "positive",
+   "Great support today, thank you Maria!"
+  ]
+ ]
+}

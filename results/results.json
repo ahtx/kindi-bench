@@ -1,0 +1,1557 @@
+{
+ "r2": {
+  "base": {
+   "runs": 96,
+   "pass": 14,
+   "outcomes": {
+    "wrong": 56,
+    "crash": 22,
+    "pass": 14,
+    "nofile": 4
+   },
+   "false_claims": 72,
+   "mean_secs": 106.3,
+   "pass_any": 9,
+   "n_tasks": 32,
+   "tasks": {
+    "sumargs": {
+     "runs": 3,
+     "pass": 0
+    },
+    "bigmul": {
+     "runs": 3,
+     "pass": 0
+    },
+    "anagram": {
+     "runs": 3,
+     "pass": 0
+    },
+    "fixavg": {
+     "runs": 3,
+     "pass": 1
+    },
+    "minwindow": {
+     "runs": 3,
+     "pass": 0
+    },
+    "wordfreq": {
+     "runs": 3,
+     "pass": 1
+    },
+    "rpn": {
+     "runs": 3,
+     "pass": 0
+    },
+    "fizz": {
+     "runs": 3,
+     "pass": 3
+    },
+    "rle": {
+     "runs": 3,
+     "pass": 0
+    },
+    "roman": {
+     "runs": 3,
+     "pass": 0
+    },
+    "lcs": {
+     "runs": 3,
+     "pass": 2
+    },
+    "firstge": {
+     "runs": 3,
+     "pass": 0
+    },
+    "flatten": {
+     "runs": 3,
+     "pass": 2
+    },
+    "lru": {
+     "runs": 3,
+     "pass": 0
+    },
+    "slugify": {
+     "runs": 3,
+     "pass": 0
+    },
+    "csvline": {
+     "runs": 3,
+     "pass": 0
+    },
+    "countlines": {
+     "runs": 3,
+     "pass": 1
+    },
+    "minstack": {
+     "runs": 3,
+     "pass": 0
+    },
+    "brackets": {
+     "runs": 3,
+     "pass": 2
+    },
+    "fixcsvsum": {
+     "runs": 3,
+     "pass": 0
+    },
+    "wordbreak": {
+     "runs": 3,
+     "pass": 0
+    },
+    "largest": {
+     "runs": 3,
+     "pass": 0
+    },
+    "ini": {
+     "runs": 3,
+     "pass": 0
+    },
+    "dedupe": {
+     "runs": 3,
+     "pass": 0
+    },
+    "fixjs": {
+     "runs": 3,
+     "pass": 0
+    },
+    "dijkstra": {
+     "runs": 3,
+     "pass": 1
+    },
+    "deepmerge": {
+     "runs": 3,
+     "pass": 0
+    },
+    "spiral": {
+     "runs": 3,
+     "pass": 0
+    },
+    "topo": {
+     "runs": 3,
+     "pass": 0
+    },
+    "merge": {
+     "runs": 3,
+     "pass": 0
+    },
+    "calc": {
+     "runs": 3,
+     "pass": 0
+    },
+    "clamp": {
+     "runs": 3,
+     "pass": 1
+    }
+   }
+  },
+  "base8k": {
+   "runs": 96,
+   "pass": 14,
+   "outcomes": {
+    "wrong": 63,
+    "crash": 16,
+    "pass": 14,
+    "nofile": 2,
+    "timeout": 1
+   },
+   "false_claims": 70,
+   "mean_secs": 119.1,
+   "pass_any": 8,
+   "n_tasks": 32,
+   "tasks": {
+    "sumargs": {
+     "runs": 3,
+     "pass": 0
+    },
+    "bigmul": {
+     "runs": 3,
+     "pass": 0
+    },
+    "anagram": {
+     "runs": 3,
+     "pass": 1
+    },
+    "fixavg": {
+     "runs": 3,
+     "pass": 1
+    },
+    "minwindow": {
+     "runs": 3,
+     "pass": 0
+    },
+    "wordfreq": {
+     "runs": 3,
+     "pass": 1
+    },
+    "rpn": {
+     "runs": 3,
+     "pass": 0
+    },
+    "fizz": {
+     "runs": 3,
+     "pass": 3
+    },
+    "rle": {
+     "runs": 3,
+     "pass": 0
+    },
+    "roman": {
+     "runs": 3,
+     "pass": 0
+    },
+    "lcs": {
+     "runs": 3,
+     "pass": 0
+    },
+    "firstge": {
+     "runs": 3,
+     "pass": 0
+    },
+    "flatten": {
+     "runs": 3,
+     "pass": 2
+    },
+    "lru": {
+     "runs": 3,
+     "pass": 0
+    },
+    "slugify": {
+     "runs": 3,
+     "pass": 0
+    },
+    "csvline": {
+     "runs": 3,
+     "pass": 0
+    },
+    "countlines": {
+     "runs": 3,
+     "pass": 0
+    },
+    "minstack": {
+     "runs": 3,
+     "pass": 0
+    },
+    "brackets": {
+     "runs": 3,
+     "pass": 1
+    },
+    "fixcsvsum": {
+     "runs": 3,
+     "pass": 2
+    },
+    "wordbreak": {
+     "runs": 3,
+     "pass": 0
+    },
+    "largest": {
+     "runs": 3,
+     "pass": 0
+    },
+    "ini": {
+     "runs": 3,
+     "pass": 0
+    },
+    "dedupe": {
+     "runs": 3,
+     "pass": 0
+    },
+    "fixjs": {
+     "runs": 3,
+     "pass": 0
+    },
+    "dijkstra": {
+     "runs": 3,
+     "pass": 0
+    },
+    "deepmerge": {
+     "runs": 3,
+     "pass": 0
+    },
+    "spiral": {
+     "runs": 3,
+     "pass": 0
+    },
+    "topo": {
+     "runs": 3,
+     "pass": 0
+    },
+    "merge": {
+     "runs": 3,
+     "pass": 0
+    },
+    "calc": {
+     "runs": 3,
+     "pass": 0
+    },
+    "clamp": {
+     "runs": 3,
+     "pass": 3
+    }
+   }
+  },
+  "ext": {
+   "runs": 95,
+   "pass": 15,
+   "outcomes": {
+    "pass": 15,
+    "wrong": 57,
+    "crash": 20,
+    "timeout": 3
+   },
+   "false_claims": 64,
+   "mean_secs": 193.8,
+   "pass_any": 8,
+   "n_tasks": 32,
+   "tasks": {
+    "sumargs": {
+     "runs": 3,
+     "pass": 1
+    },
+    "bigmul": {
+     "runs": 3,
+     "pass": 0
+    },
+    "anagram": {
+     "runs": 3,
+     "pass": 1
+    },
+    "fixavg": {
+     "runs": 3,
+     "pass": 2
+    },
+    "minwindow": {
+     "runs": 3,
+     "pass": 0
+    },
+    "wordfreq": {
+     "runs": 3,
+     "pass": 0
+    },
+    "rpn": {
+     "runs": 3,
+     "pass": 0
+    },
+    "fizz": {
+     "runs": 3,
+     "pass": 3
+    },
+    "rle": {
+     "runs": 3,
+     "pass": 0
+    },
+    "roman": {
+     "runs": 3,
+     "pass": 0
+    },
+    "lcs": {
+     "runs": 3,
+     "pass": 3
+    },
+    "firstge": {
+     "runs": 3,
+     "pass": 0
+    },
+    "flatten": {
+     "runs": 3,
+     "pass": 0
+    },
+    "lru": {
+     "runs": 3,
+     "pass": 0
+    },
+    "slugify": {
+     "runs": 3,
+     "pass": 0
+    },
+    "csvline": {
+     "runs": 3,
+     "pass": 0
+    },
+    "countlines": {
+     "runs": 3,
+     "pass": 1
+    },
+    "minstack": {
+     "runs": 3,
+     "pass": 1
+    },
+    "brackets": {
+     "runs": 3,
+     "pass": 0
+    },
+    "fixcsvsum": {
+     "runs": 3,
+     "pass": 0
+    },
+    "wordbreak": {
+     "runs": 3,
+     "pass": 0
+    },
+    "largest": {
+     "runs": 3,
+     "pass": 0
+    },
+    "ini": {
+     "runs": 3,
+     "pass": 0
+    },
+    "dedupe": {
+     "runs": 3,
+     "pass": 0
+    },
+    "fixjs": {
+     "runs": 3,
+     "pass": 0
+    },
+    "dijkstra": {
+     "runs": 3,
+     "pass": 0
+    },
+    "deepmerge": {
+     "runs": 2,
+     "pass": 0
+    },
+    "spiral": {
+     "runs": 3,
+     "pass": 0
+    },
+    "topo": {
+     "runs": 3,
+     "pass": 0
+    },
+    "merge": {
+     "runs": 3,
+     "pass": 0
+    },
+    "calc": {
+     "runs": 3,
+     "pass": 0
+    },
+    "clamp": {
+     "runs": 3,
+     "pass": 3
+    }
+   }
+  },
+  "ext_think": {
+   "runs": 96,
+   "pass": 20,
+   "outcomes": {
+    "wrong": 51,
+    "crash": 22,
+    "pass": 20,
+    "timeout": 3
+   },
+   "false_claims": 47,
+   "mean_secs": 263.6,
+   "pass_any": 12,
+   "n_tasks": 32,
+   "tasks": {
+    "sumargs": {
+     "runs": 3,
+     "pass": 0
+    },
+    "bigmul": {
+     "runs": 3,
+     "pass": 0
+    },
+    "anagram": {
+     "runs": 3,
+     "pass": 0
+    },
+    "fixavg": {
+     "runs": 3,
+     "pass": 2
+    },
+    "minwindow": {
+     "runs": 3,
+     "pass": 0
+    },
+    "wordfreq": {
+     "runs": 3,
+     "pass": 1
+    },
+    "rpn": {
+     "runs": 3,
+     "pass": 0
+    },
+    "fizz": {
+     "runs": 3,
+     "pass": 3
+    },
+    "rle": {
+     "runs": 3,
+     "pass": 0
+    },
+    "roman": {
+     "runs": 3,
+     "pass": 0
+    },
+    "lcs": {
+     "runs": 3,
+     "pass": 1
+    },
+    "firstge": {
+     "runs": 3,
+     "pass": 1
+    },
+    "flatten": {
+     "runs": 3,
+     "pass": 2
+    },
+    "lru": {
+     "runs": 3,
+     "pass": 0
+    },
+    "slugify": {
+     "runs": 3,
+     "pass": 0
+    },
+    "csvline": {
+     "runs": 3,
+     "pass": 0
+    },
+    "countlines": {
+     "runs": 3,
+     "pass": 2
+    },
+    "minstack": {
+     "runs": 3,
+     "pass": 1
+    },
+    "brackets": {
+     "runs": 3,
+     "pass": 1
+    },
+    "fixcsvsum": {
+     "runs": 3,
+     "pass": 1
+    },
+    "wordbreak": {
+     "runs": 3,
+     "pass": 0
+    },
+    "largest": {
+     "runs": 3,
+     "pass": 0
+    },
+    "ini": {
+     "runs": 3,
+     "pass": 0
+    },
+    "dedupe": {
+     "runs": 3,
+     "pass": 0
+    },
+    "fixjs": {
+     "runs": 3,
+     "pass": 0
+    },
+    "dijkstra": {
+     "runs": 3,
+     "pass": 2
+    },
+    "deepmerge": {
+     "runs": 3,
+     "pass": 0
+    },
+    "spiral": {
+     "runs": 3,
+     "pass": 0
+    },
+    "topo": {
+     "runs": 3,
+     "pass": 0
+    },
+    "merge": {
+     "runs": 3,
+     "pass": 0
+    },
+    "calc": {
+     "runs": 3,
+     "pass": 0
+    },
+    "clamp": {
+     "runs": 3,
+     "pass": 3
+    }
+   }
+  },
+  "think": {
+   "runs": 96,
+   "pass": 10,
+   "outcomes": {
+    "wrong": 64,
+    "pass": 10,
+    "crash": 19,
+    "timeout": 3
+   },
+   "false_claims": 66,
+   "mean_secs": 194.4,
+   "pass_any": 7,
+   "n_tasks": 32,
+   "tasks": {
+    "sumargs": {
+     "runs": 3,
+     "pass": 0
+    },
+    "bigmul": {
+     "runs": 3,
+     "pass": 0
+    },
+    "anagram": {
+     "runs": 3,
+     "pass": 0
+    },
+    "fixavg": {
+     "runs": 3,
+     "pass": 1
+    },
+    "minwindow": {
+     "runs": 3,
+     "pass": 0
+    },
+    "wordfreq": {
+     "runs": 3,
+     "pass": 0
+    },
+    "rpn": {
+     "runs": 3,
+     "pass": 0
+    },
+    "fizz": {
+     "runs": 3,
+     "pass": 2
+    },
+    "rle": {
+     "runs": 3,
+     "pass": 0
+    },
+    "roman": {
+     "runs": 3,
+     "pass": 0
+    },
+    "lcs": {
+     "runs": 3,
+     "pass": 2
+    },
+    "firstge": {
+     "runs": 3,
+     "pass": 0
+    },
+    "flatten": {
+     "runs": 3,
+     "pass": 1
+    },
+    "lru": {
+     "runs": 3,
+     "pass": 0
+    },
+    "slugify": {
+     "runs": 3,
+     "pass": 0
+    },
+    "csvline": {
+     "runs": 3,
+     "pass": 0
+    },
+    "countlines": {
+     "runs": 3,
+     "pass": 1
+    },
+    "minstack": {
+     "runs": 3,
+     "pass": 1
+    },
+    "brackets": {
+     "runs": 3,
+     "pass": 0
+    },
+    "fixcsvsum": {
+     "runs": 3,
+     "pass": 0
+    },
+    "wordbreak": {
+     "runs": 3,
+     "pass": 0
+    },
+    "largest": {
+     "runs": 3,
+     "pass": 0
+    },
+    "ini": {
+     "runs": 3,
+     "pass": 0
+    },
+    "dedupe": {
+     "runs": 3,
+     "pass": 0
+    },
+    "fixjs": {
+     "runs": 3,
+     "pass": 0
+    },
+    "dijkstra": {
+     "runs": 3,
+     "pass": 0
+    },
+    "deepmerge": {
+     "runs": 3,
+     "pass": 0
+    },
+    "spiral": {
+     "runs": 3,
+     "pass": 0
+    },
+    "topo": {
+     "runs": 3,
+     "pass": 0
+    },
+    "merge": {
+     "runs": 3,
+     "pass": 0
+    },
+    "calc": {
+     "runs": 3,
+     "pass": 0
+    },
+    "clamp": {
+     "runs": 3,
+     "pass": 2
+    }
+   }
+  }
+ },
+ "t3": {
+  "base": {
+   "runs": 120,
+   "pass": 44,
+   "outcomes": {
+    "crash": 1,
+    "wrong": 36,
+    "nofile": 39,
+    "pass": 44
+   },
+   "false_claims": 24,
+   "mean_secs": 24.8,
+   "pass_any": 14,
+   "n_tasks": 24,
+   "tasks": {
+    "counterrors": {
+     "runs": 5,
+     "pass": 0
+    },
+    "daysbetween": {
+     "runs": 5,
+     "pass": 1
+    },
+    "execrun": {
+     "runs": 5,
+     "pass": 5
+    },
+    "pyversion": {
+     "runs": 5,
+     "pass": 1
+    },
+    "hellosh": {
+     "runs": 5,
+     "pass": 0
+    },
+    "topip": {
+     "runs": 5,
+     "pass": 0
+    },
+    "unzipcount": {
+     "runs": 5,
+     "pass": 1
+    },
+    "cronline": {
+     "runs": 5,
+     "pass": 0
+    },
+    "diskfree": {
+     "runs": 5,
+     "pass": 1
+    },
+    "tarbackup": {
+     "runs": 5,
+     "pass": 2
+    },
+    "jsonvalue": {
+     "runs": 5,
+     "pass": 5
+    },
+    "wordcount": {
+     "runs": 5,
+     "pass": 0
+    },
+    "csv2json": {
+     "runs": 5,
+     "pass": 2
+    },
+    "sortcsv": {
+     "runs": 5,
+     "pass": 0
+    },
+    "renamejpeg": {
+     "runs": 5,
+     "pass": 3
+    },
+    "gitinit": {
+     "runs": 5,
+     "pass": 5
+    },
+    "editport": {
+     "runs": 5,
+     "pass": 5
+    },
+    "replaceall": {
+     "runs": 5,
+     "pass": 0
+    },
+    "countpy": {
+     "runs": 5,
+     "pass": 0
+    },
+    "gpuname": {
+     "runs": 5,
+     "pass": 3
+    },
+    "dedupenames": {
+     "runs": 5,
+     "pass": 5
+    },
+    "largest3": {
+     "runs": 5,
+     "pass": 0
+    },
+    "todos": {
+     "runs": 5,
+     "pass": 0
+    },
+    "emails": {
+     "runs": 5,
+     "pass": 5
+    }
+   }
+  },
+  "base8k": {
+   "runs": 120,
+   "pass": 48,
+   "outcomes": {
+    "wrong": 34,
+    "nofile": 38,
+    "pass": 48
+   },
+   "false_claims": 22,
+   "mean_secs": 34.1,
+   "pass_any": 16,
+   "n_tasks": 24,
+   "tasks": {
+    "counterrors": {
+     "runs": 5,
+     "pass": 0
+    },
+    "daysbetween": {
+     "runs": 5,
+     "pass": 1
+    },
+    "execrun": {
+     "runs": 5,
+     "pass": 5
+    },
+    "pyversion": {
+     "runs": 5,
+     "pass": 1
+    },
+    "hellosh": {
+     "runs": 5,
+     "pass": 0
+    },
+    "topip": {
+     "runs": 5,
+     "pass": 0
+    },
+    "unzipcount": {
+     "runs": 5,
+     "pass": 1
+    },
+    "cronline": {
+     "runs": 5,
+     "pass": 0
+    },
+    "diskfree": {
+     "runs": 5,
+     "pass": 1
+    },
+    "tarbackup": {
+     "runs": 5,
+     "pass": 3
+    },
+    "jsonvalue": {
+     "runs": 5,
+     "pass": 5
+    },
+    "wordcount": {
+     "runs": 5,
+     "pass": 1
+    },
+    "csv2json": {
+     "runs": 5,
+     "pass": 5
+    },
+    "sortcsv": {
+     "runs": 5,
+     "pass": 0
+    },
+    "renamejpeg": {
+     "runs": 5,
+     "pass": 2
+    },
+    "gitinit": {
+     "runs": 5,
+     "pass": 5
+    },
+    "editport": {
+     "runs": 5,
+     "pass": 5
+    },
+    "replaceall": {
+     "runs": 5,
+     "pass": 0
+    },
+    "countpy": {
+     "runs": 5,
+     "pass": 0
+    },
+    "gpuname": {
+     "runs": 5,
+     "pass": 3
+    },
+    "dedupenames": {
+     "runs": 5,
+     "pass": 5
+    },
+    "largest3": {
+     "runs": 5,
+     "pass": 0
+    },
+    "todos": {
+     "runs": 5,
+     "pass": 1
+    },
+    "emails": {
+     "runs": 5,
+     "pass": 4
+    }
+   }
+  },
+  "ext": {
+   "runs": 120,
+   "pass": 50,
+   "outcomes": {
+    "wrong": 42,
+    "nofile": 28,
+    "pass": 50
+   },
+   "false_claims": 23,
+   "mean_secs": 45.9,
+   "pass_any": 16,
+   "n_tasks": 24,
+   "tasks": {
+    "counterrors": {
+     "runs": 5,
+     "pass": 0
+    },
+    "daysbetween": {
+     "runs": 5,
+     "pass": 0
+    },
+    "execrun": {
+     "runs": 5,
+     "pass": 2
+    },
+    "pyversion": {
+     "runs": 5,
+     "pass": 4
+    },
+    "hellosh": {
+     "runs": 5,
+     "pass": 1
+    },
+    "topip": {
+     "runs": 5,
+     "pass": 0
+    },
+    "unzipcount": {
+     "runs": 5,
+     "pass": 1
+    },
+    "cronline": {
+     "runs": 5,
+     "pass": 0
+    },
+    "diskfree": {
+     "runs": 5,
+     "pass": 0
+    },
+    "tarbackup": {
+     "runs": 5,
+     "pass": 3
+    },
+    "jsonvalue": {
+     "runs": 5,
+     "pass": 5
+    },
+    "wordcount": {
+     "runs": 5,
+     "pass": 0
+    },
+    "csv2json": {
+     "runs": 5,
+     "pass": 3
+    },
+    "sortcsv": {
+     "runs": 5,
+     "pass": 1
+    },
+    "renamejpeg": {
+     "runs": 5,
+     "pass": 1
+    },
+    "gitinit": {
+     "runs": 5,
+     "pass": 5
+    },
+    "editport": {
+     "runs": 5,
+     "pass": 5
+    },
+    "replaceall": {
+     "runs": 5,
+     "pass": 2
+    },
+    "countpy": {
+     "runs": 5,
+     "pass": 0
+    },
+    "gpuname": {
+     "runs": 5,
+     "pass": 4
+    },
+    "dedupenames": {
+     "runs": 5,
+     "pass": 5
+    },
+    "largest3": {
+     "runs": 5,
+     "pass": 0
+    },
+    "todos": {
+     "runs": 5,
+     "pass": 3
+    },
+    "emails": {
+     "runs": 5,
+     "pass": 5
+    }
+   }
+  },
+  "ext_think": {
+   "runs": 120,
+   "pass": 63,
+   "outcomes": {
+    "wrong": 40,
+    "nofile": 17,
+    "pass": 63
+   },
+   "false_claims": 13,
+   "mean_secs": 58.4,
+   "pass_any": 15,
+   "n_tasks": 24,
+   "tasks": {
+    "counterrors": {
+     "runs": 5,
+     "pass": 0
+    },
+    "daysbetween": {
+     "runs": 5,
+     "pass": 0
+    },
+    "execrun": {
+     "runs": 5,
+     "pass": 5
+    },
+    "pyversion": {
+     "runs": 5,
+     "pass": 5
+    },
+    "hellosh": {
+     "runs": 5,
+     "pass": 3
+    },
+    "topip": {
+     "runs": 5,
+     "pass": 0
+    },
+    "unzipcount": {
+     "runs": 5,
+     "pass": 1
+    },
+    "cronline": {
+     "runs": 5,
+     "pass": 0
+    },
+    "diskfree": {
+     "runs": 5,
+     "pass": 0
+    },
+    "tarbackup": {
+     "runs": 5,
+     "pass": 4
+    },
+    "jsonvalue": {
+     "runs": 5,
+     "pass": 5
+    },
+    "wordcount": {
+     "runs": 5,
+     "pass": 4
+    },
+    "csv2json": {
+     "runs": 5,
+     "pass": 5
+    },
+    "sortcsv": {
+     "runs": 5,
+     "pass": 4
+    },
+    "renamejpeg": {
+     "runs": 5,
+     "pass": 3
+    },
+    "gitinit": {
+     "runs": 5,
+     "pass": 5
+    },
+    "editport": {
+     "runs": 5,
+     "pass": 5
+    },
+    "replaceall": {
+     "runs": 5,
+     "pass": 0
+    },
+    "countpy": {
+     "runs": 5,
+     "pass": 0
+    },
+    "gpuname": {
+     "runs": 5,
+     "pass": 4
+    },
+    "dedupenames": {
+     "runs": 5,
+     "pass": 5
+    },
+    "largest3": {
+     "runs": 5,
+     "pass": 0
+    },
+    "todos": {
+     "runs": 5,
+     "pass": 0
+    },
+    "emails": {
+     "runs": 5,
+     "pass": 5
+    }
+   }
+  },
+  "think": {
+   "runs": 120,
+   "pass": 70,
+   "outcomes": {
+    "nofile": 19,
+    "wrong": 31,
+    "pass": 70
+   },
+   "false_claims": 13,
+   "mean_secs": 45.4,
+   "pass_any": 18,
+   "n_tasks": 24,
+   "tasks": {
+    "counterrors": {
+     "runs": 5,
+     "pass": 0
+    },
+    "daysbetween": {
+     "runs": 5,
+     "pass": 2
+    },
+    "execrun": {
+     "runs": 5,
+     "pass": 5
+    },
+    "pyversion": {
+     "runs": 5,
+     "pass": 5
+    },
+    "hellosh": {
+     "runs": 5,
+     "pass": 2
+    },
+    "topip": {
+     "runs": 5,
+     "pass": 0
+    },
+    "unzipcount": {
+     "runs": 5,
+     "pass": 2
+    },
+    "cronline": {
+     "runs": 5,
+     "pass": 0
+    },
+    "diskfree": {
+     "runs": 5,
+     "pass": 3
+    },
+    "tarbackup": {
+     "runs": 5,
+     "pass": 5
+    },
+    "jsonvalue": {
+     "runs": 5,
+     "pass": 5
+    },
+    "wordcount": {
+     "runs": 5,
+     "pass": 5
+    },
+    "csv2json": {
+     "runs": 5,
+     "pass": 4
+    },
+    "sortcsv": {
+     "runs": 5,
+     "pass": 3
+    },
+    "renamejpeg": {
+     "runs": 5,
+     "pass": 5
+    },
+    "gitinit": {
+     "runs": 5,
+     "pass": 5
+    },
+    "editport": {
+     "runs": 5,
+     "pass": 5
+    },
+    "replaceall": {
+     "runs": 5,
+     "pass": 0
+    },
+    "countpy": {
+     "runs": 5,
+     "pass": 1
+    },
+    "gpuname": {
+     "runs": 5,
+     "pass": 3
+    },
+    "dedupenames": {
+     "runs": 5,
+     "pass": 5
+    },
+    "largest3": {
+     "runs": 5,
+     "pass": 0
+    },
+    "todos": {
+     "runs": 5,
+     "pass": 0
+    },
+    "emails": {
+     "runs": 5,
+     "pass": 5
+    }
+   }
+  }
+ },
+ "t3steps": {
+  "base8k": {
+   "runs": 15,
+   "pass": 0,
+   "outcomes": {
+    "wrong": 7,
+    "nofile": 8
+   },
+   "false_claims": 3,
+   "mean_secs": 181.2,
+   "pass_any": 0,
+   "n_tasks": 3,
+   "tasks": {
+    "counterrors_steps": {
+     "runs": 5,
+     "pass": 0
+    },
+    "largest3_steps": {
+     "runs": 5,
+     "pass": 0
+    },
+    "topip_steps": {
+     "runs": 5,
+     "pass": 0
+    }
+   }
+  },
+  "ext_think": {
+   "runs": 15,
+   "pass": 1,
+   "outcomes": {
+    "nofile": 8,
+    "pass": 1,
+    "wrong": 6
+   },
+   "false_claims": 0,
+   "mean_secs": 215.5,
+   "pass_any": 1,
+   "n_tasks": 3,
+   "tasks": {
+    "counterrors_steps": {
+     "runs": 5,
+     "pass": 1
+    },
+    "largest3_steps": {
+     "runs": 5,
+     "pass": 0
+    },
+    "topip_steps": {
+     "runs": 5,
+     "pass": 0
+    }
+   }
+  },
+  "think": {
+   "runs": 15,
+   "pass": 0,
+   "outcomes": {
+    "nofile": 8,
+    "wrong": 7
+   },
+   "false_claims": 1,
+   "mean_secs": 222.8,
+   "pass_any": 0,
+   "n_tasks": 3,
+   "tasks": {
+    "counterrors_steps": {
+     "runs": 5,
+     "pass": 0
+    },
+    "largest3_steps": {
+     "runs": 5,
+     "pass": 0
+    },
+    "topip_steps": {
+     "runs": 5,
+     "pass": 0
+    }
+   }
+  }
+ },
+ "t3cmd": {
+  "base8k": {
+   "runs": 30,
+   "pass": 3,
+   "outcomes": {
+    "wrong": 11,
+    "nofile": 16,
+    "pass": 3
+   },
+   "false_claims": 7,
+   "mean_secs": 85.6,
+   "pass_any": 2,
+   "n_tasks": 6,
+   "tasks": {
+    "counterrors_cmd": {
+     "runs": 5,
+     "pass": 0
+    },
+    "counterrors_stepscmd": {
+     "runs": 5,
+     "pass": 1
+    },
+    "topip_stepscmd": {
+     "runs": 5,
+     "pass": 2
+    },
+    "largest3_stepscmd": {
+     "runs": 5,
+     "pass": 0
+    },
+    "largest3_cmd": {
+     "runs": 5,
+     "pass": 0
+    },
+    "topip_cmd": {
+     "runs": 5,
+     "pass": 0
+    }
+   }
+  },
+  "think": {
+   "runs": 30,
+   "pass": 1,
+   "outcomes": {
+    "nofile": 11,
+    "wrong": 18,
+    "pass": 1
+   },
+   "false_claims": 6,
+   "mean_secs": 124.3,
+   "pass_any": 1,
+   "n_tasks": 6,
+   "tasks": {
+    "counterrors_cmd": {
+     "runs": 5,
+     "pass": 0
+    },
+    "counterrors_stepscmd": {
+     "runs": 5,
+     "pass": 1
+    },
+    "topip_stepscmd": {
+     "runs": 5,
+     "pass": 0
+    },
+    "largest3_stepscmd": {
+     "runs": 5,
+     "pass": 0
+    },
+    "largest3_cmd": {
+     "runs": 5,
+     "pass": 0
+    },
+    "topip_cmd": {
+     "runs": 5,
+     "pass": 0
+    }
+   }
+  }
+ },
+ "k420-t3": {
+  "think": {
+   "runs": 24,
+   "pass": 13,
+   "outcomes": {
+    "wrong": 9,
+    "pass": 13,
+    "nofile": 2
+   },
+   "false_claims": 3,
+   "mean_secs": 96.4,
+   "pass_any": 13,
+   "n_tasks": 24,
+   "tasks": {
+    "daysbetween": {
+     "runs": 1,
+     "pass": 0
+    },
+    "todos": {
+     "runs": 1,
+     "pass": 0
+    },
+    "hellosh": {
+     "runs": 1,
+     "pass": 0
+    },
+    "emails": {
+     "runs": 1,
+     "pass": 1
+    },
+    "counterrors": {
+     "runs": 1,
+     "pass": 0
+    },
+    "countpy": {
+     "runs": 1,
+     "pass": 0
+    },
+    "wordcount": {
+     "runs": 1,
+     "pass": 1
+    },
+    "pyversion": {
+     "runs": 1,
+     "pass": 1
+    },
+    "tarbackup": {
+     "runs": 1,
+     "pass": 1
+    },
+    "gpuname": {
+     "runs": 1,
+     "pass": 1
+    },
+    "topip": {
+     "runs": 1,
+     "pass": 0
+    },
+    "largest3": {
+     "runs": 1,
+     "pass": 0
+    },
+    "unzipcount": {
+     "runs": 1,
+     "pass": 1
+    },
+    "dedupenames": {
+     "runs": 1,
+     "pass": 1
+    },
+    "execrun": {
+     "runs": 1,
+     "pass": 1
+    },
+    "sortcsv": {
+     "runs": 1,
+     "pass": 1
+    },
+    "csv2json": {
+     "runs": 1,
+     "pass": 1
+    },
+    "editport": {
+     "runs": 1,
+     "pass": 1
+    },
+    "diskfree": {
+     "runs": 1,
+     "pass": 0
+    },
+    "gitinit": {
+     "runs": 1,
+     "pass": 1
+    },
+    "replaceall": {
+     "runs": 1,
+     "pass": 0
+    },
+    "renamejpeg": {
+     "runs": 1,
+     "pass": 0
+    },
+    "jsonvalue": {
+     "runs": 1,
+     "pass": 1
+    },
+    "cronline": {
+     "runs": 1,
+     "pass": 0
+    }
+   }
+  }
+ }
+}
