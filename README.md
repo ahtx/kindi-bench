@@ -1,4 +1,4 @@
-# kbench 0.1.0
+# kbench 0.1.1
 
 kbench measures how well a small language model does real work as an agent. The agent is [pi](https://pi.dev), and pi
 connects to the model through an OpenAI-compatible server. Then pi gets 65 tasks: programs to write, programs to
