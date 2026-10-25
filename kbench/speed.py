@@ -98,7 +98,7 @@ def speed(a):
             print("%8d %10s %12s %12s %10s %9s %8s" % (
                 row["prompt_words"], row["ttft_ms"], row["read_tok_s"] or "-",
                 row["write_tok_s"] or "-", row["write_basis"], row["total_s"], row["e2e_tok_s"] or "-"))
-        if a.runs > 1:
+        if a.repeat > 1:
             w = [r["write_tok_s"] for r in acc if r["write_tok_s"]]
             t = [r["ttft_ms"] for r in acc]
             print("    avg: ttft %s ms, write %s tok/s" % (round(sum(t) / len(t), 1), round(sum(w) / len(w), 2) if w else "-"))
