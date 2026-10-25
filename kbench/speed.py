@@ -89,7 +89,7 @@ def speed(a):
     print("%8s %10s %12s %12s %10s %9s %8s" % ("words", "ttft_ms", "read_tok/s", "write_tok/s", "basis", "total_s", "e2e_tok/s"))
     for n in sizes:
         acc = []
-        for _ in range(a.runs):
+        for _ in range(a.repeat):
             row = measure(url, model, n, a.gen, a.timeout)
             row["model"] = model
             row["url"] = url
@@ -118,7 +118,7 @@ def main(argv=None):
     ap.add_argument("--model", default=None)
     ap.add_argument("--sizes", default="128,512,2048")
     ap.add_argument("--gen", type=int, default=128)
-    ap.add_argument("--runs", type=int, default=1)
+    ap.add_argument("--repeat", type=int, default=1)
     ap.add_argument("--timeout", type=float, default=600)
     ap.add_argument("--save", action="store_true")
     speed(ap.parse_args(argv))

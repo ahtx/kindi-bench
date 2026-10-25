@@ -169,7 +169,7 @@ def main(argv=None):
     p.add_argument("--model", default=None, help="model id (default: first of GET /models)")
     p.add_argument("--sizes", default="128,512,2048", help="prompt sizes in words, comma-separated")
     p.add_argument("--gen", type=int, default=128, help="tokens to generate per call")
-    p.add_argument("--runs", type=int, default=1)
+    p.add_argument("--repeat", type=int, default=1, help="repeat each size and average")
     p.add_argument("--timeout", type=float, default=600)
     p.add_argument("--save", action="store_true", help="write results/speed-*.json")
     p.set_defaults(fn=cmd_speed)
