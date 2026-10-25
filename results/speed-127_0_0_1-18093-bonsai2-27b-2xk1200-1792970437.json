@@ -1,0 +1,41 @@
+{
+ "url": "http://127.0.0.1:18093/v1",
+ "model": "bonsai2-27b-2xk1200",
+ "gen": 64,
+ "sizes": [
+  128,
+  512
+ ],
+ "rows": [
+  {
+   "prompt_words": 144,
+   "prompt_chars": 743,
+   "prompt_tokens": 161,
+   "ttft_ms": 13064.5,
+   "read_tok_s": 12.32,
+   "decode_chunks": 64,
+   "completion_tokens": 64,
+   "write_tok_s": 12.64,
+   "write_basis": "usage",
+   "total_s": 18.13,
+   "e2e_tok_s": 3.53,
+   "model": "bonsai2-27b-2xk1200",
+   "url": "http://127.0.0.1:18093/v1"
+  },
+  {
+   "prompt_words": 528,
+   "prompt_chars": 2727,
+   "prompt_tokens": 561,
+   "ttft_ms": 37242.6,
+   "read_tok_s": 15.06,
+   "decode_chunks": 64,
+   "completion_tokens": 64,
+   "write_tok_s": 12.52,
+   "write_basis": "usage",
+   "total_s": 42.35,
+   "e2e_tok_s": 1.51,
+   "model": "bonsai2-27b-2xk1200",
+   "url": "http://127.0.0.1:18093/v1"
+  }
+ ]
+}

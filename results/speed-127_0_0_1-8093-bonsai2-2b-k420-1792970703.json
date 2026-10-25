@@ -1,0 +1,57 @@
+{
+ "url": "http://127.0.0.1:8093/v1",
+ "model": "bonsai2-2b-k420",
+ "gen": 128,
+ "sizes": [
+  128,
+  512,
+  2048
+ ],
+ "rows": [
+  {
+   "prompt_words": 144,
+   "prompt_chars": 743,
+   "prompt_tokens": 161,
+   "ttft_ms": 376.2,
+   "read_tok_s": 427.93,
+   "decode_chunks": 128,
+   "completion_tokens": 128,
+   "write_tok_s": 23.36,
+   "write_basis": "usage",
+   "total_s": 5.86,
+   "e2e_tok_s": 21.86,
+   "model": "bonsai2-2b-k420",
+   "url": "http://127.0.0.1:8093/v1"
+  },
+  {
+   "prompt_words": 528,
+   "prompt_chars": 2727,
+   "prompt_tokens": 561,
+   "ttft_ms": 17637.7,
+   "read_tok_s": 31.81,
+   "decode_chunks": 128,
+   "completion_tokens": 128,
+   "write_tok_s": 23.13,
+   "write_basis": "usage",
+   "total_s": 23.17,
+   "e2e_tok_s": 5.52,
+   "model": "bonsai2-2b-k420",
+   "url": "http://127.0.0.1:8093/v1"
+  },
+  {
+   "prompt_words": 2064,
+   "prompt_chars": 10663,
+   "prompt_tokens": 2161,
+   "ttft_ms": 52053.3,
+   "read_tok_s": 41.52,
+   "decode_chunks": 128,
+   "completion_tokens": 128,
+   "write_tok_s": 22.4,
+   "write_basis": "usage",
+   "total_s": 57.77,
+   "e2e_tok_s": 2.22,
+   "model": "bonsai2-2b-k420",
+   "url": "http://127.0.0.1:8093/v1"
+  }
+ ]
+}
