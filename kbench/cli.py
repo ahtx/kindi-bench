@@ -76,6 +76,12 @@ def cmd_breakdown(a):
     return 0
 
 
+def cmd_speed(a):
+    from .speed import speed
+    speed(a)
+    return 0
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(prog="kbench", description="kbench %s - agent benchmark for small models with the "
                                  "pi coding agent and an OpenAI-compatible server" % __version__)
@@ -157,6 +163,16 @@ def main(argv=None):
     p.add_argument("--prompts", choices=["tested", "first"], default="tested",
                    help="per-item prompts: tested (default) or the first ones, which failed on spam and orders")
     p.set_defaults(fn=cmd_breakdown)
+
+    p = sub.add_parser("speed", help="read (prefill) and write (decode) throughput of an OpenAI-compatible server")
+    p.add_argument("--url", default=DEFAULT_URL, help="OpenAI-compatible base URL (default %s)" % DEFAULT_URL)
+    p.add_argument("--model", default=None, help="model id (default: first of GET /models)")
+    p.add_argument("--sizes", default="128,512,2048", help="prompt sizes in words, comma-separated")
+    p.add_argument("--gen", type=int, default=128, help="tokens to generate per call")
+    p.add_argument("--runs", type=int, default=1)
+    p.add_argument("--timeout", type=float, default=600)
+    p.add_argument("--save", action="store_true", help="write results/speed-*.json")
+    p.set_defaults(fn=cmd_speed)
 
     a = ap.parse_args(argv)
     if getattr(a, "runs", None):
