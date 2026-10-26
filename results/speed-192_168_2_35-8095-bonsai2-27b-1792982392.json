@@ -1,0 +1,41 @@
+{
+ "url": "http://192.168.2.35:8095/v1",
+ "model": "bonsai2-27b",
+ "gen": 64,
+ "sizes": [
+  128,
+  512
+ ],
+ "rows": [
+  {
+   "prompt_words": 144,
+   "prompt_chars": 743,
+   "prompt_tokens": 161,
+   "ttft_ms": 2729.8,
+   "read_tok_s": 58.98,
+   "decode_chunks": 64,
+   "completion_tokens": 64,
+   "write_tok_s": 29.93,
+   "write_basis": "usage",
+   "total_s": 4.87,
+   "e2e_tok_s": 13.15,
+   "model": "bonsai2-27b",
+   "url": "http://192.168.2.35:8095/v1"
+  },
+  {
+   "prompt_words": 528,
+   "prompt_chars": 2727,
+   "prompt_tokens": 561,
+   "ttft_ms": 698.7,
+   "read_tok_s": 802.89,
+   "decode_chunks": 64,
+   "completion_tokens": 64,
+   "write_tok_s": 29.94,
+   "write_basis": "usage",
+   "total_s": 2.84,
+   "e2e_tok_s": 22.56,
+   "model": "bonsai2-27b",
+   "url": "http://192.168.2.35:8095/v1"
+  }
+ ]
+}
