@@ -1,0 +1,55 @@
+{
+ "nudge-eval": {
+  "base": {
+   "runs": 3,
+   "pass": 0,
+   "outcomes": {
+    "nofile": 2,
+    "crash": 1
+   },
+   "false_claims": 1,
+   "mean_secs": 405.9,
+   "pass_any": 0,
+   "n_tasks": 3,
+   "tasks": {
+    "bigmul": {
+     "runs": 1,
+     "pass": 0
+    },
+    "csvline": {
+     "runs": 1,
+     "pass": 0
+    },
+    "roman": {
+     "runs": 1,
+     "pass": 0
+    }
+   }
+  },
+  "ext": {
+   "runs": 3,
+   "pass": 0,
+   "outcomes": {
+    "nofile": 3
+   },
+   "false_claims": 3,
+   "mean_secs": 183.1,
+   "pass_any": 0,
+   "n_tasks": 3,
+   "tasks": {
+    "bigmul": {
+     "runs": 1,
+     "pass": 0
+    },
+    "csvline": {
+     "runs": 1,
+     "pass": 0
+    },
+    "roman": {
+     "runs": 1,
+     "pass": 0
+    }
+   }
+  }
+ }
+}
