@@ -1,0 +1,57 @@
+{
+ "url": "http://192.168.122.10:8095/v1",
+ "model": "bonsai2-27b",
+ "gen": 128,
+ "sizes": [
+  128,
+  512,
+  2048
+ ],
+ "rows": [
+  {
+   "prompt_words": 144,
+   "prompt_chars": 743,
+   "prompt_tokens": 161,
+   "ttft_ms": 8119.5,
+   "read_tok_s": 19.83,
+   "decode_chunks": 128,
+   "completion_tokens": 128,
+   "write_tok_s": 20.49,
+   "write_basis": "usage",
+   "total_s": 14.37,
+   "e2e_tok_s": 8.91,
+   "model": "bonsai2-27b",
+   "url": "http://192.168.122.10:8095/v1"
+  },
+  {
+   "prompt_words": 528,
+   "prompt_chars": 2727,
+   "prompt_tokens": 561,
+   "ttft_ms": 22508.2,
+   "read_tok_s": 24.92,
+   "decode_chunks": 128,
+   "completion_tokens": 128,
+   "write_tok_s": 20.34,
+   "write_basis": "usage",
+   "total_s": 28.8,
+   "e2e_tok_s": 4.44,
+   "model": "bonsai2-27b",
+   "url": "http://192.168.122.10:8095/v1"
+  },
+  {
+   "prompt_words": 2064,
+   "prompt_chars": 10663,
+   "prompt_tokens": 2161,
+   "ttft_ms": 56502.6,
+   "read_tok_s": 38.25,
+   "decode_chunks": 122,
+   "completion_tokens": 122,
+   "write_tok_s": 18.18,
+   "write_basis": "usage",
+   "total_s": 63.21,
+   "e2e_tok_s": 1.93,
+   "model": "bonsai2-27b",
+   "url": "http://192.168.122.10:8095/v1"
+  }
+ ]
+}
